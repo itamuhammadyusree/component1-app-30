@@ -1,14 +1,23 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="yas">
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="action-sheets-basic-page">
+  <button ion-button block (click)="presentActionSheet()">
+    Show Action Sheet
+  </button>
+
+  <button ion-button block (click)="showAlert()">
+    Show Alert
+  </button>
 </ion-content>
+
+<ion-footer>
+  <ion-navbar color="dark">
+    
+  </ion-navbar> 
+</ion-footer>
